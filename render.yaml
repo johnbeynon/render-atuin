@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: atiun-server
+    runtime: image
+    image:
+      url: ghcr.io/ellie/atuin:latest
+    envVars:
+      - key: ATUIN_HOST
+        value: 0.0.0.0
+      - key: ATIUN_PORT
+        value: 8888
+      - key: ATUIN_OPEN_REGISTRATION
+        value: false
+      - key: ATUIN_DB_URL
+        fromDatabase:
+          name: atuin-db
+          property: connectionString
+
+databases:
+  - name: atuin-db
+    databaseName: private
+    ipAllowList: []
