@@ -2,6 +2,7 @@ services:
   - type: web
     name: atiun-server
     runtime: image
+    dockerCommand: server start
     image:
       url: ghcr.io/ellie/atuin:latest
     envVars:
