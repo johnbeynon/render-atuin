@@ -4,11 +4,11 @@
 
 Deploy an Atuin server to Render to sync your command line history - see https://atuin.sh/ for more details
 
-> :warning: **This will provision paid services by default**: $7 web service and a $7 Postres database
+> :warning: **This will provision paid services by default**: $7 web service and a $7 Postgres database
 
 ## Manual Installation
 
-1. From the Render dashboard, NEW > Blueprint
+1. From the Render dashboard, [NEW > Blueprint](https://dashboard.render.com/select-repo?type=blueprint)
 2. Copy/Paste the URL of this repo into the 'Public Git Repo' field and submit
 3. Give the Blueprint a name
 4. Click Apply to create the services
@@ -32,3 +32,5 @@ and then force a sync with:
 ```
 $ atuin sync
 ```
+
+Toggle `ATUIN_OPEN_REGISTRATION` back to false to prevent unwanted registrations
