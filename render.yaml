@@ -12,7 +12,7 @@ services:
         value: 8888
       - key: ATUIN_OPEN_REGISTRATION
         value: false
-      - key: ATUIN_DB_URL
+      - key: ATUIN_DB_URI
         fromDatabase:
           name: atuin-db
           property: connectionString
