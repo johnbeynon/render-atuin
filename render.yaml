@@ -3,6 +3,7 @@ services:
     name: atiun-server
     runtime: image
     dockerCommand: atuin server start
+    autoDeploy: false
     image:
       url: ghcr.io/ellie/atuin:latest
     envVars:
