@@ -4,12 +4,23 @@
 
 Deploy an Atuin server to Render to sync your command line history - see https://atuin.sh/ for more details
 
-> :warning: **This will provision paid services by default**: $7 web service and a $7 Postgres database
+> **Warning**
+> This will provision paid services by default, a $7 web service and a $7 Postgres database
 
-## Manual Installation
+## Manual Installation - Using the public repo
 
 1. From the Render dashboard, [NEW > Blueprint](https://dashboard.render.com/select-repo?type=blueprint)
 2. Copy/Paste the URL of this repo into the 'Public Git Repo' field and submit
+3. Give the Blueprint a name
+4. Click Apply to create the services
+
+## Manual Installation - Using a fork
+
+> **Note**
+> When you fork a repo make sure to use the New > Blueprint flow and not the 'Deploy to Render' option - without changes that would deploy the original repo and not the fork
+
+1. [Fork](https://github.com/johnbeynon/render-atuin/fork) the repo to your own Github account
+2. From the Render dashboard, create a new blueprint, [NEW > Blueprint](https://dashboard.render.com/select-repo?type=blueprint)
 3. Give the Blueprint a name
 4. Click Apply to create the services
 
