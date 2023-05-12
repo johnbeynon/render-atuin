@@ -8,8 +8,6 @@ services:
     envVars:
       - key: ATUIN_HOST
         value: 0.0.0.0
-      - key: ATIUN_PORT
-        value: 8888
       - key: ATUIN_OPEN_REGISTRATION
         value: false # change to true to allow registrations
       - key: ATUIN_DB_URI
