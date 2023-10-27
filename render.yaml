@@ -5,7 +5,7 @@ services:
     dockerCommand: atuin server start
     autoDeploy: false
     image:
-      url: ghcr.io/ellie/atuin:latest
+      url: ghcr.io/atuinsh/atuin:latest
     envVars:
       - key: ATUIN_HOST
         value: 0.0.0.0
